@@ -3,6 +3,7 @@ body {
 }
 :root{
     --theme-primary: #0455BF;
+    --theme-accent: #fbb;
     --surface-fill-color:#46f;
 }
 *{
@@ -148,4 +149,7 @@ ripple:before, .ripple:after{
     color: var(--theme-primary);
     background-color: #fff;
     box-shadow: 2px 2px 2px #0002;
+}
+.bg-accent{
+    background-color: var(--theme-accent);
 }
