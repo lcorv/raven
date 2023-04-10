@@ -112,3 +112,40 @@ ripple:before, .ripple:after{
     60%{transform:scale(3);opacity:1;}
     100%{transform:scale(3);opacity:0;}
 }
+.app-bar {
+ height: 70px;
+ padding: 0 20px;
+ background-color: var(--theme-primary) ;
+ position: relative;
+ width: 100%;
+ display: flex;
+ align-items:center;
+ gap:0px;
+}
+.input{
+    padding:10px;
+    outline-color:transparent;
+    margin: 10px 0;
+    color:var(--theme-primary);
+}
+.btn{
+    display: inline-flex;
+    align-items:center;
+    justify-content:center;
+    border-color: transparent;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin: 10px 10px 10px 0;
+    font-weight: bold;
+    text-decoration: none;
+    width:fit-content;
+}
+.btn-primary{
+    background-color: var(--theme-primary);
+    color: #fff;
+}
+.btn-primary-raised{
+    color: var(--theme-primary);
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #0002;
+}
