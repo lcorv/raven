@@ -1,4 +1,4 @@
-const qs = (el)=>document.querySelector(el);
+    const qs = (el)=>document.querySelector(el);
     const sidebar = qs('.sidebar-wrapper');
         sidebar.open = false ;
     
@@ -33,6 +33,8 @@ const qs = (el)=>document.querySelector(el);
         )
         window.clearTimeout(timeout)
       document.documentElement.style.setProperty(
+        '--animation', "none")
+      document.documentElement.style.setProperty(
         '--animation2', "none")
         button.classList.add("ripple-active")
         let pointerX=e.offsetX
@@ -41,14 +43,8 @@ const qs = (el)=>document.querySelector(el);
         let height=button.clientHeight;
         let left;
         let top;
-        if(height>width){
-        left = pointerX
-        top = pointerY
-        }
-        else{
-        left = pointerX
-        top = pointerY 
-        }
+        left = pointerX-(width/2)
+        top = pointerY-(height/2)
     document.documentElement.style
     .setProperty('--left', `${left}px`);
     document.documentElement.style
@@ -62,14 +58,15 @@ const qs = (el)=>document.querySelector(el);
     .setProperty('--width', `${width}px`);
     }
     document.documentElement.style.setProperty(
-        '--animation', "click .4s ease-out"
+        '--animation', "click .6s ease-out"
     )
     document.documentElement.style.setProperty(
-        '--animation2', "click .4s 0.05s ease-out")
+        '--animation2', "click .6s 0.2s ease-out")
     timeout = window.setTimeout(()=>{
         document.documentElement.style.setProperty(
         '--animation2', "none")
-        
-    },850)
+        document.documentElement.style.setProperty(
+        '--animation', "none")
+    },800)
         })
         })
