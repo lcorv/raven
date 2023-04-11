@@ -1,5 +1,4 @@
 "use-strict";
-
 //import stylesheet
 let stylesheet = document.createElement('link');
 stylesheet.rel = "stylesheet";
