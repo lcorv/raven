@@ -3,7 +3,7 @@
 //import stylesheet
 let stylesheet = document.createElement('link');
 stylesheet.rel = "stylesheet";
-stylesheet.href = "../css/raven.css";
+stylesheet.href = "https://lcorv.github.io/raven/css/raven.css";
 document.body.appendChild(stylesheet);
 
 //shortcuts
