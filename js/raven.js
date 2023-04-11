@@ -1,3 +1,4 @@
+    "use-strict";
     //import stylesheet
     let stylesheet = document.createElement('link');
     stylesheet.rel = "stylesheet";
@@ -34,7 +35,7 @@
     }
     //ripples
     var timeout;
-    buttons = document.querySelectorAll('.ripple');
+    let buttons = document.querySelectorAll('.ripple');
     if( buttons.length > 0 ){
         buttons.forEach(button =>{
             button.addEventListener("pointerdown",(e)=>{
