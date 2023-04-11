@@ -5,7 +5,7 @@
     document.body.appendChild(stylesheet);
     //shortcuts
     const qs = (el)=>document.querySelector(el);
-    const qsa = (els)=>document.querySelector(els);
+    const qsa = (els)=>document.querySelectorAll(els);
     //sidebar
     const sidebar = qs('.sidebar-wrapper');
     if( sidebar ){
