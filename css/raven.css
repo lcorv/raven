@@ -186,6 +186,7 @@ ripple:before, .ripple:after{
 .bg-accent{
     background-color: var(--theme-accent);
 }
+
 /*flex style*/
 .flex-row{
     display: flex;
